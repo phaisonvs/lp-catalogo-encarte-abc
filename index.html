@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja um franqueado ABC da Construção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css">
+</head>
+
+<body>
+  <!--FORMULÁRIO-->
+  <section class="section-formulario" data-id="formulario">
+    <div class="form-container">
+      <div class="franquia-info">
+        <div class="logo-container">
+          <img src="/assets/logo-tema.png" alt="Logo ABC da Construção">
+        </div>
+        <h5>Cadastre-se receba as ofertas do mês!</h5>
+        <p>
+          Sua chance de economizar em produtos de qualidade, com ofertas especiais na sua região.
+        </p>
+
+      </div>
+      <div class="forms">
+        <div class="form-title">
+          <figure>
+            <img src="assets/image-forms.png" alt="Franquia ABC Miniatura" class="image-form">
+            <img src="assets/check-forms.png" alt="Check de Sucesso" class="check-form" style="display: none;">
+          </figure>
+          <p class="titleStep1 forms-title">Ofertas exclusivas <br>na sua região</p>
+          <p class="titleStep2 forms-title" style="display: none;">Cadastro rápido:
+            Preencha com seus dados</p>
+          <p class="titleStep3 forms-title" style="display: none;">É hora de economizar!</p>
+          <p class="subtitleStep1 forms-subtitle">Selecione sua localização para ver ofertas personalizadas</p>
+          <p class="subtitleStep2 forms-subtitle" style="display: none;">Estamos quase lá! Preencha os campos abaixo</p>
+          <p class="subtitleStep3 forms-subtitle" style="display: none;">Seus dados foram enviados com sucesso e
+            segurança!<br>Agora é só conferir o catálogo na sua caixa de entrada no e-mail que você cadastrou.</p>
+          <br>
+          <div class="container-progress-bar">
+            <div class="line-progress">
+              <div class="progress-bar"></div>
+            </div>
+            <output class="progress-percent">0%</output>
+          </div>
+        </div>
+        <form action="#" autocomplete="off">
+          <div class="formStep1">
+            <div class="label-input-row">
+              <div class="label-input">
+                <label for="state">Estado *</label>
+                <div class="select-custom">
+                  <select name="state" class="state" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AM">AM</option>
+                    <option value="AP">AP</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="PR">PR</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                  </select>
+                </div>
+              </div>
+              <div class="label-input">
+                <label for="city">Cidade *</label>
+                <div class="select-custom">
+                  <select name="city" class="city" required>
+                    <option value="" disabled selected>Selecione</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="label-input">
+              <label for="guide_shop">Selecione a Guide Shop mais próxima de você *</label>
+              <div class="select-custom">
+                <select name="guide_shop" class="guide_shop" required>
+                  <option value="" disabled selected>Selecione</option>
+                </select>
+              </div>
+            </div>
+            <div class="frame-botoes" style="margin-top: 28px;">
+              <button type="button" class="botao-proxima-etapa-step1 botao-proxima-etapa" disabled>
+                AVANÇAR
+              </button>
+            </div>
+          </div>
+          <div class="formStep2" style="display: none;">
+            <!--<p class="sub-aviso">
+              <span><img
+                  src="https://abcdaconstrucao.my.site.com/sejaumfranqueado/sfsites/c/cms/delivery/media/MCB5NLIMFEWZAOFJJG33MGFLGH4Y"
+                  alt=""></span> Campos indicados com * são obrigatórios
+            </p>-->
+            <div class="label-input-row">
+              <div class="label-input">
+                <label for="name">Nome *</label>
+                <input type="text" class="name" name="name" placeholder="Digite seu nome" required>
+              </div>
+              <div class="label-input">
+                <label for="lastname">Sobrenome *</label>
+                <input type="text" class="lastname" name="lastname" placeholder="Sobrenome" required>
+              </div>
+            </div>
+            <div class="label-input">
+              <label for="tel">Telefone Whatsapp *</label>
+              <input type="tel" class="tel" name="tel" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <div class="label-input">
+              <label for="email">E-mail *</label>
+              <input type="email" class="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="recaptcha-container">
+              <div class="g-recaptcha" data-sitekey="your-recaptcha-site-key">
+                <!-- reCAPTCHA será renderizado aqui -->
+              </div>
+            </div>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" class="privacyPolicy" name="privacyPolicy" required checked>
+                <label for="privacyPolicy">
+                  Eu concordo com a Política de Privacidade e autorizo o uso dos meus dados conforme descrito.
+                </label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" class="marketingConsent" name="marketingConsent" checked>
+                <label for="marketingConsent">
+                  Concordo em receber E-mails, SMS e Whatsapp da ABC da Construção.
+                </label>
+              </div>
+            </div>
+            <div class="frame-botoes">
+              <button type="button" class="botao-voltar-Step2">
+                <img
+                  src="https://abcdaconstrucao.my.site.com/sejaumfranqueado/sfsites/c/cms/delivery/media/MCG3C22A55TBGCNLK2H74ESIHPAY"
+                  alt="Ícone Seta Voltar">
+              </button>
+              <button type="button" class="botao-proxima-etapa-step2 botao-proxima-etapa" disabled>
+                FINALIZAR
+              </button>
+            </div>
+          </div>
+          <div class="formStep3" style="display: none;">
+            <div class="frame-botoes success-buttons">
+              <button class="botaoReset resetar-btn" type="reset">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 3.33325V1.66659L6.66667 4.99992L10 8.33325V6.66659C12.7583 6.66659 15 8.90825 15 11.6666C15 14.4249 12.7583 16.6666 10 16.6666C7.24167 16.6666 5 14.4249 5 11.6666H3.33333C3.33333 15.3499 6.31667 18.3333 10 18.3333C13.6833 18.3333 16.6667 15.3499 16.6667 11.6666C16.6667 7.98325 13.6833 4.99992 10 4.99992V3.33325Z"
+                    fill="#333333" />
+                </svg>
+              </button>
+              <button class="botaoOutrasGuideShops" type="button">Ver outras Guide Shops</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-box">
+          <img src="/assets/abc-logo.svg" alt="Logo ABC da Construção">
+        </div>
+        <div class="footer-copyright">
+          <p>© 2025 ABC DA CONSTRUÇÃO LTDA. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-slogan">
+          <p>Tudo em acabamentos, tudo para você.</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
